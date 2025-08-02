@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHNMAXHUB 47</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #0d0d0d 0%, #000000 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.07);
+      padding: 60px 40px;
+      max-width: 850px;
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      width: 140px;
+      height: 140px;
+      background-image: url('https://raw.githubusercontent.com/SrNCKZN/SHNMAXHUB-47.0/main/df10adc75d10b3cb184c863c90a5af4a.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      border: 2px solid white;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      letter-spacing: 4px;
+      color: #ffffff;
+      text-shadow: 0 0 5px #fff;
+    }
+
+    .descricao {
+      font-size: 1.1rem;
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .botao {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 14px 36px;
+      font-size: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 12px rgba(255,255,255,0.2);
+    }
+
+    .botao::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+      z-index: -1;
+    }
+
+    .botao:hover::before {
+      transform: scaleX(1);
+    }
+
+    .botao:hover {
+      color: black;
+      box-shadow: 0 0 20px white;
+    }
+
+    .creditos {
+      font-size: 0.95rem;
+      color: #aaa;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 20px;
+      margin-top: 20px;
+      letter-spacing: 1px;
+    }
+
+    .creditos span {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .container {
+        padding: 30px;
+        gap: 25px;
+      }
+
+      .descricao {
+        font-size: 1rem;
+      }
+
+      .botao {
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo"></div>
+
+    <h1>SHNMAXHUB 47</h1>
+
+    <p class="descricao">
+      Scripts insanos, visual elegante e poder absoluto.<br>
+      O hub definitivo da <strong>SHNMAXSCRIPTS</strong> para Roblox.
+    </p>
+
+    <button class="botao" onclick="alert('Acesso em breve disponível!')">Acessar Hub</button>
+
+    <div class="creditos">
+      @2025 <span>SHNMAXSCRIPTS</span> • Todos os direitos reservados
+    </div>
+  </div>
+</body>
+</html>
